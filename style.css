@@ -1,0 +1,43 @@
+body {
+    margin:0;
+}
+
+section {
+    margin: auto;
+    height: 1400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(189, 5, 5);
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color:#FFF;
+}
+
+.divBotoes {
+    margin-bottom: 35px;
+}
+
+button {
+    width:150px;
+    height: 50px;
+    border: solid 5px black;
+    border-radius:25px;
+    background-color: rgb(232, 54, 54);
+    color:#FFF;
+    font-size: 20px;
+
+}
+
+@keyframes moveButton {
+    to {
+        transform: translateX(700px);
+    }    
+}
+
+#botaoNao.mexendo {
+    animation: moveButton 0.5s ease-in-out infinite alternate;
+}
